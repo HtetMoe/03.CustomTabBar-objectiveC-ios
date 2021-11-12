@@ -6,6 +6,7 @@
 //
 
 #import "FirstViewController.h"
+#import "Constants.h"
 
 @interface FirstViewController ()
 
@@ -15,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor systemCyanColor];
+    // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = color1;
 }
 
 /*

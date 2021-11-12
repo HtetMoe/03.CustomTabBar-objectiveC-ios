@@ -24,8 +24,8 @@
     
     self.tabBar.backgroundColor = [UIColor whiteColor];
     
-    firstVC.tabBarItem  = [[UITabBarItem alloc]initWithTitle:@"First" image:nil tag:0];
-    secondVC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Second" image:nil tag:1];
+    firstVC.tabBarItem  = [[UITabBarItem alloc]initWithTitle:@"First" image:[UIImage imageNamed:@"home"] tag:0];
+    secondVC.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Second" image:[UIImage imageNamed:@"profile"] tag:1];
 }
 
 

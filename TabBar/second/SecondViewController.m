@@ -6,6 +6,7 @@
 //
 
 #import "SecondViewController.h"
+#import "Constants.h"
 
 @interface SecondViewController ()
 
@@ -15,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor systemMintColor];
+    // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = color2;
 }
 
 /*
