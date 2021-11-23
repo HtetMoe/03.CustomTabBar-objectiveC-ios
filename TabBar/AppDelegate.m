@@ -6,20 +6,21 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
+#import "ViewController.h"
+@interface AppDelegate (){
+    UINavigationController *navVC;
+}
 @end
 
 @implementation AppDelegate
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
++ (instancetype)sharedAppDelegate{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
-
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    return YES;
+}
 #pragma mark - UISceneSession lifecycle
 
 

@@ -7,6 +7,8 @@
 
 #import "FirstViewController.h"
 #import "Constants.h"
+#import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface FirstViewController ()
 
@@ -19,15 +21,14 @@
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = color1;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)btnToDetailPressed:(id)sender {
+    [self navigateToDetailVC];
 }
-*/
 
+-(void)navigateToDetailVC{
+    
+    DetailViewController *detailVC=[[DetailViewController alloc]initWithNibName:@"DetailViewController" bundle:nil];
+    [self.navigationController pushViewController:detailVC animated:nil];
+    
+}
 @end
